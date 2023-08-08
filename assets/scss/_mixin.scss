@@ -580,3 +580,19 @@
        
     }
 }
+
+@mixin title{
+    font-family: $fontJost;
+    color: $text-title;
+    font-size: 25px;
+    font-weight: 600;
+}
+@mixin button{
+    padding: 10px 20px;
+    color: $text-color;
+    background-color: orange;
+    font-family: $fontJost;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 30px;    
+}

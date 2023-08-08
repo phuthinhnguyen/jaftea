@@ -1,0 +1,74 @@
+ <nav class="container-fluid">
+        <div class="row d-flex align-items-center">
+            <div class="col-4 left">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                  
+                    <li>
+                        <a href="shop.html">Shop</a>
+                    </li>
+                   
+                    <li>
+                        <a href="product.html">Product</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="">Page</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-4 menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions">
+                <a class="bar"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            </div>
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header">
+                    <div class="menu-show">
+                        <div class="menu-show-wrap">
+                            <div class="menu-show-item" data-itemid="item1">
+                                <a href="index.html">Demo</a>
+                            </div>
+                            <div class="menu-show-item" data-itemid="item2">
+                                <a href="shop.html">Shop</a>
+                            </div>
+                            <div class="menu-show-item" data-itemid="item3">
+                                <a href="product.html">Product</a>
+                            </div>
+                            <div class="menu-show-item" data-itemid="item4">
+                                <a href="blog.html">Blog</a>
+                            </div>
+                            <div class="menu-show-item" data-itemid="item5">
+                                <a href="">Page</a>
+                            </div>
+                            <button>Sign in</button>
+                            <button>Create An Account</button>
+                        </div>
+                        <div class="menu-show-close"><i class="fa-solid fa-xmark"></i></div>
+                    </div>
+                </div>
+                <script>
+                    $(".menu-show-item-dropdown").hide();
+                    $(".menu-show-item").click(function name(params) {
+                        $(this).children("#plus").toggle();
+                        $(this).children("#minus").toggle();
+                        let itemid = $(this).data("itemid");
+                        $("#"+itemid).slideToggle();
+                    })
+                </script>
+            </div>
+            <div class="col-4 text-center center">
+                <img src="assets/images/home/dark-logo_1n.png" alt="" onclick="window.location.href='index.html'">
+            </div>
+            <div class="col-4 right">
+                <ul>
+                    <li class="search"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a><span class="tooltiptext">Search</span></li>
+                    <li class="user"><a href=""><i class="fa-regular fa-user" aria-hidden="true"></i></a><span class="tooltiptext">Sign in</span></li>
+                    <li class="star"><a href="" ><i class="fa-regular fa-star" aria-hidden="true"></i></a><span class="tooltiptext">My Wish List</span><a>0</a></li>
+                    <li class="mycart"><a href=""><i class="fa fa-bag-shopping" aria-hidden="true"></i></a><span class="tooltiptext">My Cart</span><a>0</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
