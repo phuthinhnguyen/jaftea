@@ -1,9 +1,9 @@
 @mixin link-decoration{
     text-decoration: none;
-    color: black;
-    &:hover{
-        color: lightgray;
-    }
+    // color: black;
+    // &:hover{
+    //     color: lightgray;
+    // }
 }
 @mixin scrollbar ($width,$track-color,$thumb-color,$thumb-hover-color){
     & ::-webkit-scrollbar {
@@ -141,136 +141,136 @@
         height: 100%;
     }
 }
-@mixin item-top{
-    position: relative;
-    min-width: 200px;
-    &:hover{
-        cursor: pointer;
-    }
-    img{
-        width: 100%;
-        height: auto;
-    }
-    .overlay-item1{
-        @include overlayitem1;
-        .addtocard{
-            @include addtocard;
-        }
-    }
-    .overlay-item2{
-        @include overlayitem2;
-        @include overlayitem2item;
-    }
-    .overlay-item3{
-        @include overlayitem3;
-    }
-    @include showoverlayitem;
-}
-@mixin item-center{
-    a{
-        font-weight: 450;
-        display: block;
-        margin-top: 20px;
-        transition: .5s;
-        &:hover{
-            color: $a-hover;
-        }
-    }
-    p{
-        display: inline-block;
-        margin-top: 10px;
-        &:first-of-type{
-            font-weight: 450;
-        }
-        &:last-of-type{
-            text-decoration: line-through;
-            margin-left: 10px;
-            color: rgb(179, 176, 176);
-            font-weight: 400;
-        }
-    }
-}
-@mixin item-bottom{
-    height: 70px;
-    margin-top: -35px;
-    .item-bottom-color{
-        height: 100%;
-        position: relative;
-        width: 27px;
-        display: inline-block;
-        margin-right: 5px;
-        .color{
-            position: absolute;
-            bottom: 0;
-            a{
-                width: 27px;
-                height: 27px;
-                display: inline-block;
-                border-radius: 50%; 
-                transition: .15s;
-                &:hover{
-                    border: 4px solid white;
-                    outline: 1px solid black;
-                }
-            }
-        }
-        .tooltip-text{
-            position: absolute;
-            bottom: 40%;
-            left: -100%;
-            height: 0;
-            min-width: 90px;
-            transition: .2s ease-in-out;
-            font-size: 15px;
-            overflow: hidden;
-            span{
-                display: block;
-                margin: 0;
-                padding: 3px;
-                background-color: black;
-                color: white;
-                font-size: 14px;
-                border-radius: 5px;
-                box-shadow:  2px 4px 5px grey;
-                text-align: center;
-            }
-            i{
-                position: absolute;
-                left: 40%;
-                top: 40%;
-            }
-        }
-        &:hover{
-            cursor: pointer;
-        }
-        &:hover .tooltip-text{
-            height: 70%;
-            bottom: 35%;
-        }
-    }
-}
-@mixin product{
-    @include font($fontJost);
-    max-width: 1680px;
-    padding: 40px 30px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: auto auto auto;
-    column-gap: 30px;
-    row-gap: 30px;
-        .item{
-            .item-top{
-               @include item-top;
-            }
-            .item-center{
-                @include item-center;
-            }
-            .item-bottom{
-               @include item-bottom; 
-            }
-        }
-}
+// @mixin item-top{
+//     position: relative;
+//     min-width: 200px;
+//     &:hover{
+//         cursor: pointer;
+//     }
+//     img{
+//         width: 100%;
+//         height: auto;
+//     }
+//     .overlay-item1{
+//         @include overlayitem1;
+//         .addtocard{
+//             @include addtocard;
+//         }
+//     }
+//     .overlay-item2{
+//         @include overlayitem2;
+//         @include overlayitem2item;
+//     }
+//     .overlay-item3{
+//         @include overlayitem3;
+//     }
+//     @include showoverlayitem;
+// }
+// @mixin item-center{
+//     a{
+//         font-weight: 450;
+//         display: block;
+//         margin-top: 20px;
+//         transition: .5s;
+//         &:hover{
+//             color: $a-hover;
+//         }
+//     }
+//     p{
+//         display: inline-block;
+//         margin-top: 10px;
+//         &:first-of-type{
+//             font-weight: 450;
+//         }
+//         &:last-of-type{
+//             text-decoration: line-through;
+//             margin-left: 10px;
+//             color: rgb(179, 176, 176);
+//             font-weight: 400;
+//         }
+//     }
+// }
+// @mixin item-bottom{
+//     height: 70px;
+//     margin-top: -35px;
+//     .item-bottom-color{
+//         height: 100%;
+//         position: relative;
+//         width: 27px;
+//         display: inline-block;
+//         margin-right: 5px;
+//         .color{
+//             position: absolute;
+//             bottom: 0;
+//             a{
+//                 width: 27px;
+//                 height: 27px;
+//                 display: inline-block;
+//                 border-radius: 50%; 
+//                 transition: .15s;
+//                 &:hover{
+//                     border: 4px solid white;
+//                     outline: 1px solid black;
+//                 }
+//             }
+//         }
+//         .tooltip-text{
+//             position: absolute;
+//             bottom: 40%;
+//             left: -100%;
+//             height: 0;
+//             min-width: 90px;
+//             transition: .2s ease-in-out;
+//             font-size: 15px;
+//             overflow: hidden;
+//             span{
+//                 display: block;
+//                 margin: 0;
+//                 padding: 3px;
+//                 background-color: black;
+//                 color: white;
+//                 font-size: 14px;
+//                 border-radius: 5px;
+//                 box-shadow:  2px 4px 5px grey;
+//                 text-align: center;
+//             }
+//             i{
+//                 position: absolute;
+//                 left: 40%;
+//                 top: 40%;
+//             }
+//         }
+//         &:hover{
+//             cursor: pointer;
+//         }
+//         &:hover .tooltip-text{
+//             height: 70%;
+//             bottom: 35%;
+//         }
+//     }
+// }
+// @mixin product{
+//     @include font($fontJost);
+//     max-width: 1680px;
+//     padding: 40px 30px;
+//     margin: auto;
+//     display: grid;
+//     grid-template-columns: auto auto auto auto auto;
+//     grid-template-rows: auto auto auto;
+//     column-gap: 30px;
+//     row-gap: 30px;
+//         .item{
+//             .item-top{
+//                @include item-top;
+//             }
+//             .item-center{
+//                 @include item-center;
+//             }
+//             .item-bottom{
+//                @include item-bottom; 
+//             }
+//         }
+// }
 @mixin arrow-left-right{
     color: black;
     background-color: white;
@@ -584,15 +584,59 @@
 @mixin title{
     font-family: $fontJost;
     color: $text-title;
-    font-size: 25px;
-    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 50px;
 }
 @mixin button{
-    padding: 10px 20px;
-    color: $text-color;
-    background-color: orange;
+    height: 40px;
+    width: 200px;
+    padding: 10px;
+    color: $text-title;
+    background-color: $button-color;
     font-family: $fontJost;
-    font-size: 20px;
-    font-weight: 500;
-    border-radius: 30px;    
+    font-size: 18px;
+    border-radius: 30px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    &:hover{
+        background-color: $button-hover;
+        border: 1px solid $text-title;
+    }
+}
+@mixin menuslideitem{
+    width: 50px;
+    overflow: hidden;
+    height: 50px;
+    line-height: 30px;
+    text-align: left;
+    padding: 10px;
+    transition: .5s;
+    background-color: rgb(66,103,178);
+    border-top-right-radius: 80%;
+    border-bottom-right-radius: 80%;
+        i{
+            color: white;
+            margin-left: 5px;
+        }
+        div{
+            display: none;
+            margin-left: 20px;
+            color: white;
+            font-weight: 500;
+            width: 0;
+        }
+    &:hover{
+        cursor: pointer;
+        width: 120px;
+        border-top-right-radius: 4%;
+        border-bottom-right-radius: 4%;
+        div{
+            display: inline-block;
+        }
+    }
 }

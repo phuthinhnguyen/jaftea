@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +9,20 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+        rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="assets/js/HTMLImporter.js"></script>
     <link rel="stylesheet" href="assets/css/contactus.css">
     <title>Home</title>
 </head>
+
 <body>
     <!-- Top -->
     <script>HTMLImporter.import("menu.html");</script>
@@ -27,774 +35,434 @@
             <a href="javascript:currentSlide(2)" class="img-nav-button"></a>
         </div>
         <div class="img-wrap">
-            <img src="assets/images/home/h1_slide_01.jpg" alt="">
-            <div class="img-text">
-                <p>New Arrivals</p>
+            <img src="assets/images/home/banner.jpg" alt="">
+            <!-- <div class="img-text">
                 <div class="img-text-h1">
-                    <h1>Double </h1><h1>Breasted</h1>
+                    <h1>Double </h1>
+                    <h1>Breasted</h1>
                 </div>
-                <a href="">Shop Now</a>
-            </div>
+                <a href="">Order Now</a>
+            </div> -->
             <div class="img-text-recotton">
-                <p>The ReCotton Tee &nbsp;|</p><a href="">Shop Now</a>
+                <p>J Tea &nbsp;|</p><a href="">Order Now</a>
             </div>
         </div>
         <div class="img-wrap">
-            <img src="assets/images/home/h1_slide_02.jpg" alt="">
-            <div class="img-text">
-                <p>New Arrivals</p>
+            <img src="assets/images/home/banner2.jpg" alt="">
+            <!-- <div class="img-text">
+            
                 <div class="img-text-h1">
-                    <h1>Double </h1><h1>Breasted</h1>
+                    <h1>Double </h1>
+                    <h1>Breasted</h1>
                 </div>
-                <a href="">Shop Now</a>
-            </div>
+                <a href="">Order Now</a>
+            </div> -->
             <div class="img-text-recotton">
-                <p>The ReCotton Tee &nbsp;|</p><a href="">Shop Now</a>
+                <p>J Tea &nbsp;|</p><a href="">Order Now</a>
             </div>
         </div>
         <div class="img-wrap">
-            <img src="assets/images/home/h1_slide_03.jpg" alt="">
-            <div class="img-text">
-                <p>New Arrivals</p>
+            <img src="assets/images/home/banner3.jpg" alt="">
+            <!-- <div class="img-text">
+            
                 <div class="img-text-h1">
-                    <h1>Double </h1><h1>Breasted</h1>
+                    <h1>Double </h1>
+                    <h1>Breasted</h1>
                 </div>
-                <a href="">Shop Now</a>
-            </div>
+                <a href="">Order Now</a>
+            </div> -->
             <div class="img-text-recotton">
-                <p>The ReCotton Tee &nbsp;|</p><a href="">Shop Now</a>
+                <p>J Tea &nbsp;|</p><a href="">Order Now</a>
             </div>
         </div>
     </div>
     <script>
         let imgslide = document.getElementsByClassName("img-wrap");
         let imgnav = document.getElementsByClassName("img-nav-button");
-        let index=1;
-        for (let i=0;i<imgslide.length;i++){
-                imgslide[i].style.display="none";
+        let index = 1;
+        for (let i = 0; i < imgslide.length; i++) {
+            imgslide[i].style.display = "none";
+        }
+        imgslide[0].style.display = "block";
+        imgnav[0].style.backgroundColor = "white";
+        imgnav[0].style.border = "1px solid black";
+
+        function slide() {
+            for (let i = 0; i < imgslide.length; i++) {
+                imgslide[i].style.display = "none";
+                imgnav[i].style.backgroundColor = "black";
             }
-        imgslide[0].style.display="block";
-        imgnav[0].style.backgroundColor  = "white";
-        imgnav[0].style.border  = "1px solid black";
-    
-        function slide(){
-            for (let i=0;i<imgslide.length;i++){
-                imgslide[i].style.display="none";
-                imgnav[i].style.backgroundColor  = "black";
-            }
-            imgslide[index].style.display="block";
-            imgnav[index].style.backgroundColor="white";
-            imgnav[index].style.border  = "1px solid black";
-           
-            if (index==imgslide.length-1){
-                index=0;
+            imgslide[index].style.display = "block";
+            imgnav[index].style.backgroundColor = "white";
+            imgnav[index].style.border = "1px solid black";
+
+            if (index == imgslide.length - 1) {
+                index = 0;
             }
             else index++;
         }
-        function currentSlide(currentindex){
-            for (let i=0;i<imgslide.length;i++){
-                imgslide[i].style.display="none";
-                imgnav[i].style.backgroundColor  = "black";
+        function currentSlide(currentindex) {
+            for (let i = 0; i < imgslide.length; i++) {
+                imgslide[i].style.display = "none";
+                imgnav[i].style.backgroundColor = "black";
             }
-            index=currentindex;
-            imgslide[index].style.display="block";
-            imgnav[index].style.backgroundColor="white";
-            imgnav[index].style.border  = "1px solid black";
-           
+            index = currentindex;
+            imgslide[index].style.display = "block";
+            imgnav[index].style.backgroundColor = "white";
+            imgnav[index].style.border = "1px solid black";
+
         }
-        setInterval(slide,5000); 
+        setInterval(slide, 5000); 
     </script>
 
 
     <!-- product -->
     <div class="product">
-        <div class="item">
-            <div class="item-top">
-                <img src="assets/images/home/product_fashion_19_a_3.jpeg" alt="">
-                <div class="overlay-item1">
-                    <button class="addtocard">Add to Card</button>
+        <div class="product-wrap">
+            <h2>Our Menu</h2>
+            <div class="product-item">
+                <div class="item">
+                    <img src="assets/images/home/product-1.png" alt="">
+                    <a href="">Tea 1</a>
                 </div>
-                <div class="overlay-item2">
-                    <div><span>Add to Wish List</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-star" aria-hidden="true"></i></a></div>
-                    <div><span>Add to Compare</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa fa-code-compare" aria-hidden="true"></i></a></div>
-                    <div><span>Quick View</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-eye" aria-hidden="true"></i></a></div> 
+                <div class="item">
+                    <img src="assets/images/home/product-2.png" alt="">
+                    <a href="">Tea 1</a>
                 </div>
-                <div class="overlay-item3">
-                    <img src="assets/images/home/product_fashion_04_2.jpeg" alt="">
+                <div class="item">
+                    <img src="assets/images/home/product-3.png" alt="">
+                    <a href="">Tea 1</a>
                 </div>
-            </div>
-            <div class="item-center">
-                <a href="">Wedge-Heeled Espadrilles</a>
-                <p>$6.00</p><p id="line-through">$25.00</p>
-            </div>
-            <div class="item-bottom">
-                <div class="item-bottom-color">
-                    <div class="color">
-                        <a style="background-color: white;border:1px solid lightgray"></a>
-                    </div>
-                    <div class="tooltip-text">
-                        <span>White</span><i class="fa-solid fa-caret-down"></i>
-                    </div>
+                <div class="item">
+                    <img src="assets/images/home/product-4.png" alt="">
+                    <a href="">Tea 1</a>
                 </div>
-                <div class="item-bottom-color">
-                    <div class="color">
-                        <a style="background-color:rgb(143, 107, 7);"></a>
-                    </div>
-                    <div class="tooltip-text">
-                        <span>Brown</span><i class="fa-solid fa-caret-down"></i>
-                    </div>
+                <div class="item">
+                    <img src="assets/images/home/product-5.png" alt="">
+                    <a href="">Tea 1</a>
                 </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="item-top">
-                <img src="assets/images/home/product_fashion_16_a_1.jpeg" alt="">
-                <div class="overlay-item1">
-                    <button class="addtocard">Add to Card</button>
+                <div class="item">
+                    <img src="assets/images/home/product-6.png" alt="">
+                    <a href="">Tea 1</a>
                 </div>
-                <div class="overlay-item2">
-                    <div><span>Add to Wish List</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-star" aria-hidden="true"></i></a></div>
-                    <div><span>Add to Compare</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa fa-code-compare" aria-hidden="true"></i></a></div>
-                    <div><span>Quick View</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-eye" aria-hidden="true"></i></a></div> 
+                <div class="item">
+                    <img src="assets/images/home/product-7.png" alt="">
+                    <a href="">Tea 1</a>
                 </div>
-                <div class="overlay-item3">
-                    <img src="assets/images/home/product_fashion_16_a_4.jpeg" alt="">
+                <div class="item">
+                    <img src="assets/images/home/product-8.jpg" alt="">
+                    <a href="">Tea 1</a>
                 </div>
-            </div>
-            <div class="item-center">
-                <a href="">Square Shoulder Bag</a>
-                <p>$55.00</p><p id="line-through">$75.00</p>
-            </div>
-            <div class="item-bottom">
-                <div class="item-bottom-color">
-                    <div class="color">
-                        <a style="background-color: #EAE6DB"></a>
-                    </div>
-                    <div class="tooltip-text">
-                        <span>Beige</span><i class="fa-solid fa-caret-down"></i>
-                    </div>
-                </div>
-                <div class="item-bottom-color">
-                    <div class="color">
-                        <a style="background-color:black;"></a>
-                    </div>
-                    <div class="tooltip-text">
-                        <span>Black</span><i class="fa-solid fa-caret-down"></i>
-                    </div>
+                <div class="item">
+                    <img src="assets/images/home/product-9.jpg" alt="">
+                    <a href="">Tea 1</a>
                 </div>
             </div>
         </div>
-        <div class="item">
-            <div class="item-top">
-                <img src="assets/images/home/product_fashion_03_1.jpg" alt="">
-                <div class="overlay-item1">
-                    <button class="addtocard">Add to Card</button>
-                </div>
-                <div class="overlay-item2">
-                    <div><span>Add to Wish List</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-star" aria-hidden="true"></i></a></div>
-                    <div><span>Add to Compare</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa fa-code-compare" aria-hidden="true"></i></a></div>
-                    <div><span>Quick View</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-eye" aria-hidden="true"></i></a></div> 
-                </div>
-                <div class="overlay-item3">
-                    <img src="assets/images/home/product_fashion_03_3.jpg" alt="">
-                </div>
-            </div>
-            <div class="item-center">
-                <a href="">Check Bag</a>
-                <p>$15.00</p><p id="line-through">$21.00</p>
-            </div>
-            <div class="item-bottom">
-                <div class="item-bottom-color">
-                    <div class="color">
-                        <a style="background-color: #EAE6DB"></a>
-                    </div>
-                    <div class="tooltip-text">
-                        <span>Beige</span><i class="fa-solid fa-caret-down"></i>
-                    </div>
-                </div>
-                <div class="item-bottom-color">
-                    <div class="color">
-                        <a style="background-color:black;"></a>
-                    </div>
-                    <div class="tooltip-text">
-                        <span>Black</span><i class="fa-solid fa-caret-down"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="item-top">
-                <img src="assets/images/home/product_fashion_13_b_1.jpeg" alt="">
-                <div class="overlay-item1">
-                    <button class="addtocard">Add to Card</button>
-                </div>
-                <div class="overlay-item2">
-                    <div><span>Add to Wish List</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-star" aria-hidden="true"></i></a></div>
-                    <div><span>Add to Compare</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa fa-code-compare" aria-hidden="true"></i></a></div>
-                    <div><span>Quick View</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-eye" aria-hidden="true"></i></a></div> 
-                </div>
-                <div class="overlay-item3">
-                    <img src="assets/images/home/product_fashion_13_b_2.jpeg" alt="">
-                </div>
-            </div>
-            <div class="item-center">
-                <a href="">Stripe Cotton Shirt</a>
-                <p>$6.00</p><p id="line-through">$25.00</p>
-            </div>
-            <div class="item-bottom">
-                <div class="item-bottom-color">
-                    <div class="color">
-                        <a style="background-color: #90A87B"></a>
-                    </div>
-                    <div class="tooltip-text">
-                        <span>Green</span><i class="fa-solid fa-caret-down"></i>
-                    </div>
-                </div>
-                <div class="item-bottom-color">
-                    <div class="color">
-                        <a style="background-color: #EAE6DB"></a>
-                    </div>
-                    <div class="tooltip-text">
-                        <span>Beige</span><i class="fa-solid fa-caret-down"></i>
-                    </div>
-                </div>
-                <div class="item-bottom-color">
-                    <div class="color">
-                        <a style="background-color: #B0C5D0"></a>
-                    </div>
-                    <div class="tooltip-text">
-                        <span>Light Blue</span><i class="fa-solid fa-caret-down"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="item-top">
-                <img src="assets/images/home/product_fashion_36_a_1.jpeg" alt="">
-                <div class="overlay-item1">
-                    <button class="addtocard">Add to Card</button>
-                </div>
-                <div class="overlay-item2">
-                    <div><span>Add to Wish List</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-star" aria-hidden="true"></i></a></div>
-                    <div><span>Add to Compare</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa fa-code-compare" aria-hidden="true"></i></a></div>
-                    <div><span>Quick View</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-eye" aria-hidden="true"></i></a></div> 
-                </div>
-                <div class="overlay-item3">
-                    <img src="assets/images/home/product_fashion_36_a_2.jpeg" alt="">
-                </div>
-            </div>
-            <div class="item-center">
-                <a href="">Denim Jacket</a>
-                <p>$38.00</p><p id="line-through">$75.00</p>
-            </div>
-            <div class="item-bottom">
-                <div class="item-bottom-color">
-                    <div class="color">
-                        <a style="background-color: #C6AFC4"></a>
-                    </div>
-                    <div class="tooltip-text">
-                        <span>Light Purple</span><i class="fa-solid fa-caret-down"></i>
-                    </div>
-                </div>
-                <div class="item-bottom-color">
-                    <div class="color">
-                        <a style="background-color: black"></a>
-                    </div>
-                    <div class="tooltip-text">
-                        <span>Black</span><i class="fa-solid fa-caret-down"></i>
-                    </div>
-                </div>
-                <div class="item-bottom-color">
-                    <div class="color">
-                        <a style="background-color: #8DB5D1"></a>
-                    </div>
-                    <div class="tooltip-text">
-                        <span>Blue</span><i class="fa-solid fa-caret-down"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="item-top">
-                <img src="assets/images/home/product_fashion_14_a_1.jpeg" alt="">
-                <div class="overlay-item1">
-                    <button class="addtocard">Add to Card</button>
-                </div>
-                <div class="overlay-item2">
-                    <div><span>Add to Wish List</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-star" aria-hidden="true"></i></a></div>
-                    <div><span>Add to Compare</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa fa-code-compare" aria-hidden="true"></i></a></div>
-                    <div><span>Quick View</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-eye" aria-hidden="true"></i></a></div> 
-                </div>
-                <div class="overlay-item3">
-                    <img src="assets/images/home/product_fashion_14_a_2.jpeg" alt="">
-                </div>
-            </div>
-            <div class="item-center">
-                <a href="">Ribbed Vest Top</a>
-                <p>$6.00</p><p id="line-through">$75.00</p>
-            </div>
-            <div class="item-bottom">
-                <div class="item-bottom-color">
-                    <div class="color">
-                        <a style="background-color: #EAE6DB"></a>
-                    </div>
-                    <div class="tooltip-text">
-                        <span>Beige</span><i class="fa-solid fa-caret-down"></i>
-                    </div>
-                </div>
-                <div class="item-bottom-color">
-                    <div class="color">
-                        <a style="background-color: white;border:1px solid lightgray"></a>
-                    </div>
-                    <div class="tooltip-text">
-                        <span>White</span><i class="fa-solid fa-caret-down"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="item-top">
-                <img src="assets/images/home/product_fashion_35_b_1_1.jpeg" alt="">
-                <div class="overlay-item1">
-                    <button class="addtocard">Add to Card</button>
-                </div>
-                <div class="overlay-item2">
-                    <div><span>Add to Wish List</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-star" aria-hidden="true"></i></a></div>
-                    <div><span>Add to Compare</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa fa-code-compare" aria-hidden="true"></i></a></div>
-                    <div><span>Quick View</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-eye" aria-hidden="true"></i></a></div> 
-                </div>
-                <div class="overlay-item3">
-                    <img src="assets/images/home/product_fashion_35_b_2_1.jpeg" alt="">
-                </div>
-            </div>
-            <div class="item-center">
-                <a href="">High Ankle Jeans</a>
-                <p>$102.00</p><p id="line-through">$105.00</p>
-            </div>
-            <div class="item-bottom">
-                <div class="item-bottom-color">
-                    <div class="color">
-                        <a style="background-color: #B0C5D0"></a>
-                    </div>
-                    <div class="tooltip-text">
-                        <span>Light Blue</span><i class="fa-solid fa-caret-down"></i>
-                    </div>
-                </div>
-                <div class="item-bottom-color">
-                    <div class="color">
-                        <a style="background-color: #143F66"></a>
-                    </div>
-                    <div class="tooltip-text">
-                        <span>Dark Blue</span><i class="fa-solid fa-caret-down"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="item-top">
-                <img src="assets/images/home/product_fashion_34_a_1.jpeg" alt="">
-                <div class="overlay-item1">
-                    <button class="addtocard">Add to Card</button>
-                </div>
-                <div class="overlay-item2">
-                    <div><span>Add to Wish List</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-star" aria-hidden="true"></i></a></div>
-                    <div><span>Add to Compare</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa fa-code-compare" aria-hidden="true"></i></a></div>
-                    <div><span>Quick View</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-eye" aria-hidden="true"></i></a></div> 
-                </div>
-                <div class="overlay-item3">
-                    <img src="assets/images/home/product_fashion_34_a_2.jpeg" alt="">
-                </div>
-            </div>
-            <div class="item-center">
-                <a href="">Trainers Shoes</a>
-                <p>$6.00</p><p id="line-through">$20.00</p>
-            </div>
-            <div class="item-bottom">
-                <div class="item-bottom-color">
-                    <div class="color">
-                        <a style="background-color: black"></a>
-                    </div>
-                    <div class="tooltip-text">
-                        <span>Black</span><i class="fa-solid fa-caret-down"></i>
-                    </div>
-                </div>
-                <div class="item-bottom-color">
-                    <div class="color">
-                        <a style="background-color: lightgray"></a>
-                    </div>
-                    <div class="tooltip-text">
-                        <span>Grey</span><i class="fa-solid fa-caret-down"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="item-top">
-                <img src="assets/images/home/product_fashion_38_c_1_1_.png" alt="">
-                <div class="overlay-item1">
-                    <button class="addtocard">Add to Card</button>
-                </div>
-                <div class="overlay-item2">
-                    <div><span>Add to Wish List</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-star" aria-hidden="true"></i></a></div>
-                    <div><span>Add to Compare</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa fa-code-compare" aria-hidden="true"></i></a></div>
-                    <div><span>Quick View</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-eye" aria-hidden="true"></i></a></div> 
-                </div>
-                <div class="overlay-item3">
-                    <img src="assets/images/home/product_fashion_38_c_4.jpeg" alt="">
-                </div>
-            </div>
-            <div class="item-center">
-                <a href="">Sweatshirt Short</a>
-                <p>$9.00</p><p id="line-through">$20.00</p>
-            </div>
-            <div class="item-bottom">
-                <div class="item-bottom-color">
-                    <div class="color">
-                        <a style="background-color: black"></a>
-                    </div>
-                    <div class="tooltip-text">
-                        <span>Black</span><i class="fa-solid fa-caret-down"></i>
-                    </div>
-                </div>
-                <div class="item-bottom-color">
-                    <div class="color">
-                        <a style="background-color: lightgray"></a>
-                    </div>
-                    <div class="tooltip-text">
-                        <span>Grey</span><i class="fa-solid fa-caret-down"></i>
-                    </div>
-                </div>
-                <div class="item-bottom-color">
-                    <div class="color">
-                        <a style="background-color: #EADED9"></a>
-                    </div>
-                    <div class="tooltip-text">
-                        <span>Light Pink</span><i class="fa-solid fa-caret-down"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="item-top">
-                <img src="assets/images/home/product_fashion_30_b_1.jpeg" alt="">
-                <div class="overlay-item1">
-                    <button class="addtocard">Add to Card</button>
-                </div>
-                <div class="overlay-item2">
-                    <div><span>Add to Wish List</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-star" aria-hidden="true"></i></a></div>
-                    <div><span>Add to Compare</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa fa-code-compare" aria-hidden="true"></i></a></div>
-                    <div><span>Quick View</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-eye" aria-hidden="true"></i></a></div> 
-                </div>
-                <div class="overlay-item3">
-                    <img src="assets/images/home/product_fashion_30_b_2.jpeg" alt="">
-                </div>
-            </div>
-            <div class="item-center">
-                <a href="">Quilted Shopper</a>
-                <p>$6.00</p><p id="line-through">$22.00</p>
-            </div>
-            <div class="item-bottom">
-                <div class="item-bottom-color">
-                    <div class="color">
-                        <a style="background-color: #90A87B"></a>
-                    </div>
-                    <div class="tooltip-text">
-                        <span>Green</span><i class="fa-solid fa-caret-down"></i>
-                    </div>
-                </div>
-                <div class="item-bottom-color">
-                    <div class="color">
-                        <a style="background-color: #C6AFC4"></a>
-                    </div>
-                    <div class="tooltip-text">
-                        <span>Light Purple</span><i class="fa-solid fa-caret-down"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="item-top">
-                <img src="assets/images/home/product_fashion_15_a_1.jpeg" alt="">
-                <div class="overlay-item1">
-                    <button class="addtocard">Add to Card</button>
-                </div>
-                <div class="overlay-item2">
-                    <div><span>Add to Wish List</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-star" aria-hidden="true"></i></a></div>
-                    <div><span>Add to Compare</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa fa-code-compare" aria-hidden="true"></i></a></div>
-                    <div><span>Quick View</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-eye" aria-hidden="true"></i></a></div> 
-                </div>
-                <div class="overlay-item3">
-                    <img src="assets/images/home/product_fashion_15_a_4.jpeg" alt="">
-                </div>
-            </div>
-            <div class="item-center">
-                <a href="">Wool-Blend Jacket</a>
-                <p>$6.00</p><p id="line-through">$39.00</p>
-            </div>
-            
-        </div>
-        <div class="item">
-            <div class="item-top">
-                <img src="assets/images/home/ezgif.com-gif-maker.jpg" alt="">
-                <div class="overlay-item1">
-                    <button class="addtocard">Add to Card</button>
-                </div>
-                <div class="overlay-item2">
-                    <div><span>Add to Wish List</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-star" aria-hidden="true"></i></a></div>
-                    <div><span>Add to Compare</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa fa-code-compare" aria-hidden="true"></i></a></div>
-                    <div><span>Quick View</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-eye" aria-hidden="true"></i></a></div> 
-                </div>
-                <div class="overlay-item3">
-                    <img src="assets/images/home/ezgif.com-gif-maker.jpg" alt="">
-                </div>
-            </div>
-            <div class="item-center">
-                <a href="">V-Neck Sweater</a>
-                <p>$16.00</p><p id="line-through">$19.00</p>
-            </div>
-            <div class="item-bottom">
-                <div class="item-bottom-color">
-                    <div class="color">
-                        <a style="background-color: #B0C5D0"></a>
-                    </div>
-                    <div class="tooltip-text">
-                        <span>Light Blue</span><i class="fa-solid fa-caret-down"></i>
-                    </div>
-                </div>
-                <div class="item-bottom-color">
-                    <div class="color">
-                        <a style="background-color: black"></a>
-                    </div>
-                    <div class="tooltip-text">
-                        <span>Black</span><i class="fa-solid fa-caret-down"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="item-top">
-                <img src="assets/images/home/product_fashion_39_a_1.jpeg" alt="">
-                <div class="overlay-item1">
-                    <button class="addtocard">Add to Card</button>
-                </div>
-                <div class="overlay-item2">
-                    <div><span>Add to Wish List</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-star" aria-hidden="true"></i></a></div>
-                    <div><span>Add to Compare</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa fa-code-compare" aria-hidden="true"></i></a></div>
-                    <div><span>Quick View</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-eye" aria-hidden="true"></i></a></div> 
-                </div>
-                <div class="overlay-item3">
-                    <img src="assets/images/home/product_fashion_39_a_2.jpeg" alt="">
-                </div>
-            </div>
-            <div class="item-center">
-                <a href="">Ribbed Cardigan</a>
-                <p>$6.00</p><p id="line-through">$12.00</p>
-            </div>
-            <div class="item-bottom">
-                <div class="item-bottom-color">
-                    <div class="color">
-                        <a style="background-color: #90A87B"></a>
-                    </div>
-                    <div class="tooltip-text">
-                        <span>Green</span><i class="fa-solid fa-caret-down"></i>
-                    </div>
-                </div>
-                <div class="item-bottom-color">
-                    <div class="color">
-                        <a style="background-color: black"></a>
-                    </div>
-                    <div class="tooltip-text">
-                        <span>Black</span><i class="fa-solid fa-caret-down"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="item-top">
-                <img src="assets/images/home/product_fashion_23_a_1.jpg" alt="">
-                <div class="overlay-item1">
-                    <button class="addtocard">Add to Card</button>
-                </div>
-                <div class="overlay-item2">
-                    <div><span>Add to Wish List</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-star" aria-hidden="true"></i></a></div>
-                    <div><span>Add to Compare</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa fa-code-compare" aria-hidden="true"></i></a></div>
-                    <div><span>Quick View</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-eye" aria-hidden="true"></i></a></div> 
-                </div>
-                <div class="overlay-item3">
-                    <img src="assets/images/home/product_fashion_23_a_3.jpg" alt="">
-                </div>
-            </div>
-            <div class="item-center">
-                <a href="">Boxy Denim Jacket</a>
-                <p>$25.00</p><p id="line-through">$50.00</p>
-            </div>
-        </div>
-        <div class="item">
-            <div class="item-top">
-                <img src="assets/images/home/product_fashion_02_b_1_1.jpeg" alt="">
-                <div class="overlay-item1">
-                    <button class="addtocard">Add to Card</button>
-                </div>
-                <div class="overlay-item2">
-                    <div><span>Add to Wish List</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-star" aria-hidden="true"></i></a></div>
-                    <div><span>Add to Compare</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa fa-code-compare" aria-hidden="true"></i></a></div>
-                    <div><span>Quick View</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-eye" aria-hidden="true"></i></a></div> 
-                </div>
-                <div class="overlay-item3">
-                    <img src="assets/images/home/product_fashion_02_b_2_1.jpeg" alt="">
-                </div>
-            </div>
-            <div class="item-center">
-                <a href="">Cotton Bucket Hat</a>
-                <p>$6.00</p><p id="line-through">$10.00</p>
-            </div>
-            <div class="item-bottom">
-                <div class="item-bottom-color">
-                    <div class="color">
-                        <a style="background-color: white;border:1px solid lightgray"></a>
-                    </div>
-                    <div class="tooltip-text">
-                        <span>White</span><i class="fa-solid fa-caret-down"></i>
-                    </div>
-                </div>
-                <div class="item-bottom-color">
-                    <div class="color">
-                        <a style="background-color: #C6AFC4"></a>
-                    </div>
-                    <div class="tooltip-text">
-                        <span>Light Purple</span><i class="fa-solid fa-caret-down"></i>
-                    </div>
-                </div>
-                <div class="item-bottom-color">
-                    <div class="color">
-                        <a style="background-color:rgb(143, 107, 7);"></a>
-                    </div>
-                    <div class="tooltip-text">
-                        <span>Brown</span><i class="fa-solid fa-caret-down"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- reviews -->
-    <div class="reviews">
-        <h2>Customer Reviews</h2>
-        <div class="reviews-wrap">
-            <div class="reviews-item">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, perspiciatis ab natus sapiente corporis obcaecati culpa, praesentium commodi magnam alias quae consectetur expedita eveniet incidunt nulla dolore iste iure. Provident.</p>
-                <h3>Ryan V</h3>
-            </div>
-            <div class="reviews-item">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, perspiciatis ab natus sapiente corporis obcaecati culpa, praesentium commodi magnam alias quae consectetur expedita eveniet incidunt nulla dolore iste iure. Provident.</p>
-                <h3>Olga Ozolina </h3>
-            </div>
-            <div class="reviews-item">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, perspiciatis ab natus sapiente corporis obcaecati culpa, praesentium commodi magnam alias quae consectetur expedita eveniet incidunt nulla dolore iste iure. Provident.</p>
-                <h3>Fiona Zannou</h3>
-            </div>
-        </div>
-       <div class="reviews-button">
-            <button>Order now</button>
-            <button>Leave a review</button>
-       </div>
     </div>
+    <script>
+        $(window).on('scroll', function () {
+            scroll_pos = $(window).scrollTop() + $(window).height() + 1000;
+            element_pos = $(".product h2").offset().top + $(".product h2").height() + 200;
+            if (scroll_pos > element_pos) {
+                $(".product-item .item").addClass('animate');
+            };
+        })
+    </script>
 
-    <!-- contact -->
-    <div class="contact">
-        <h2>Contact Us</h2>
-        <div class="contactus-content-container">
-            <div class="contactus-content-item">
-                <p>Leave your message here and we will reply to you shortly</p>
-                <div class="contactus-content-item-wrap">
-                    <div class="contactus-content-item-left">
-                        <label for="">First name</label>
-                        <input placeholder="First name"></input>
-                        <label for="">Email</label>
-                        <input placeholder="example@gmail.com"></input>
-                    </div>
-                    <div class="contactus-content-item-right">
-                        <label for="">Last name</label>
-                        <input placeholder="Last name"></input>
-                        <label for="">Phone</label>
-                        <input placeholder="123-456-7890"></input>
-                    </div>
+    <!-- gallery -->
+    <div class="gallery">
+        <div class="gallery-wrap">
+            <h2>Our Gallery</h2>
+            <div class="gallery-item">
+                <div class="item item1">
+                    <img src="assets/images/home/gallery-1.jpg" alt="">
                 </div>
-                <div class="contactus-content-item-textarea">
-                    <textarea name="" id="" cols="30" rows="4" placeholder="Message"></textarea> 
+                <div class="item item2">
+                    <img src="assets/images/home/gallery-2.jpg" alt="">
                 </div>
-                <div class="contactus-content-item-button">
-                    <button>Send</button>    
+                <div class="item item3">
+                    <img src="assets/images/home/gallery-3.jpg" alt="">
                 </div>
-                
-            </div>
-            <div class="contactus-content-item">
-                <div class="contactus-map" >
-                    <div class="contactus-map-container" id="googleMap">
-                        Maps
-                    </div>
+                <div class="item item2">
+                    <img src="assets/images/home/gallery-4.jpg" alt="">
+                </div>
+                <div class="item item4">
+                    <img src="assets/images/home/gallery-5.jpg" alt="">
+                </div>
+                <div class="item item5">
+                    <img src="assets/images/home/gallery-6.jpg" alt="">
+                </div>
+                <div class="item item2">
+                    <img src="assets/images/home/gallery-7.jpg" alt="">
+                </div>
+                <div class="item item1">
+                    <img src="assets/images/home/gallery-8.jpg" alt="">
                 </div>
             </div>
         </div>
     </div>
     <script>
-        function myMap() {
-            var contentString ="Here is our headquater"
-            var myLatlng = new google.maps.LatLng(10.820301444554813, 106.70392316897191);    
-            var mapProp= {
-            center:myLatlng,
-            zoom:14,
+        $(window).on('scroll', function () {
+            scroll_pos = $(window).scrollTop() + $(window).height();
+            element_pos = $(".gallery h2").offset().top + $(".gallery h2").height() + 200;
+            if (scroll_pos > element_pos) {
+                $(".gallery-item .item1").addClass('gallery-animate1');
+                $(".gallery-item .item2").addClass('gallery-animate2');
+                $(".gallery-item .item3").addClass('gallery-animate3');
+                $(".gallery-item .item4").addClass('gallery-animate4');
+                $(".gallery-item .item5").addClass('gallery-animate5');
             };
-            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        })
+    </script>
+
+
+    <!-- reviews -->
+    <div class="reviews">
+        <div class="reviews-wrap">
+            <h2>Customer Reviews</h2>
+            <div class="reviews-item">
+                <!-- <div class="item">
+                    <p>If you are into Vietnamese Iced Coffee and Vietnamese Sandwich, J Tea is a right match. They also
+                        have many boba tea, slushies, and even Mangonada.</p>
+                    <h3>Ryan V</h3>
+                </div>
+                <div class="item">
+                    <p>Nice place with friendly staff. My little one doesn’t like green tea, so they replaced that with
+                        water for her fruit slashie. Appreciate that!.</p>
+                    <h3>Olga Ozolina </h3>
+                </div>
+                <div class="item">
+                    <p>Just yummy! My favorite drink is the taro milk tea with boba. Their sandwiches are also
+                        delicious. I definitely recommend them!</p>
+                    <h3>Fiona Zannou</h3>
+                </div> -->
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="carousel-item-wrap">
+                                <div class="item">
+                                    <p>If you are into Vietnamese Iced Coffee and Vietnamese Sandwich, J Tea is a right
+                                        match. They also
+                                        have many boba tea, slushies, and even Mangonada.</p>
+                                    <h3>Ryan V</h3>
+                                </div>
+                                <div class="item">
+                                    <p>Nice place with friendly staff. My little one doesn’t like green tea, so they
+                                        replaced that with
+                                        water for her fruit slashie. Appreciate that!.</p>
+                                    <h3>Olga Ozolina </h3>
+                                </div>
+                                <div class="item" id="reviews-res">
+                                    <p>Just yummy! My favorite drink is the taro milk tea with boba. Their sandwiches
+                                        are also
+                                        delicious. I definitely recommend them!</p>
+                                    <h3>Fiona Zannou</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-item-wrap">
+                                <div class="item">
+                                    <p>If you are into Vietnamese Iced Coffee and Vietnamese Sandwich, J Tea is a right
+                                        match. They also
+                                        have many boba tea, slushies, and even Mangonada.</p>
+                                    <h3>Ryan V</h3>
+                                </div>
+                                <div class="item">
+                                    <p>Nice place with friendly staff. My little one doesn’t like green tea, so they
+                                        replaced that with
+                                        water for her fruit slashie. Appreciate that!.</p>
+                                    <h3>Olga Ozolina </h3>
+                                </div>
+                                <div class="item" id="reviews-res">
+                                    <p>Just yummy! My favorite drink is the taro milk tea with boba. Their sandwiches
+                                        are also
+                                        delicious. I definitely recommend them!</p>
+                                    <h3>Fiona Zannou</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"><img style="width: 50px;"
+                                src="/image/index/arrowleft.svg" alt=""></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"><img style="width: 50px;"
+                                src="/image/index/arrowright.svg" alt=""></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div id="carouselExampleControls-res" class="carousel slide-responsive" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="carousel-item-wrap">
+                                <div class="item">
+                                    <p>If you are into Vietnamese Iced Coffee and Vietnamese Sandwich, J Tea is a right
+                                        match. They also
+                                        have many boba tea, slushies, and even Mangonada.</p>
+                                    <h3>Ryan V</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-item-wrap">
+                                <div class="item">
+                                    <p>Nice place with friendly staff. My little one doesn’t like green tea, so they
+                                        replaced that with
+                                        water for her fruit slashie. Appreciate that!.</p>
+                                    <h3>Olga Ozolina </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-item-wrap">
+                                <div class="item">
+                                    <p>Just yummy! My favorite drink is the taro milk tea with boba. Their sandwiches
+                                        are also
+                                        delicious. I definitely recommend them!</p>
+                                    <h3>Fiona Zannou</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-res"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"><img style="width: 50px;"
+                                src="/image/index/arrowleft.svg" alt=""></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-res"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"><img style="width: 50px;"
+                                src="/image/index/arrowright.svg" alt=""></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="reviews-button">
+                <button>Order now</button>
+                <button
+                    onclick="window.open('https://www.google.com/maps/place/J+Tea/@35.0591245,-80.9912865,15z/data=!4m5!3m4!1s0x0:0xed4be30ddd943b75!8m2!3d35.0591245!4d-80.9912865?shorturl=1')">Leave
+                    a review</button>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        $(window).on('scroll', function () {
+            scroll_pos = $(window).scrollTop() + $(window).height();
+            element_pos = $(".reviews h2").offset().top + $(".reviews h2").height();
+            if (scroll_pos > element_pos) {
+                $(".reviews").addClass('reviews-animate');
+            };
+        })
+    </script>
+
+
+    <!-- contact -->
+    <div class="contact">
+        <div class="contact-wrap">
+            <h2>Contact Us</h2>
+            <div class="contactus-content-container">
+                <div class="contactus-content-item">
+                    <p>Leave your message here and we will reply to you shortly.</p>
+                    <div class="contactus-content-item-wrap">
+                        <div class="contactus-content-item-left">
+                            <label for="">First name <span style="color: red;">*</span></label>
+                            <input placeholder="First name"></input>
+                            <label for="">Email <span style="color: red;">*</span></label>
+                            <input placeholder="example@gmail.com"></input>
+                        </div>
+                        <div class="contactus-content-item-right">
+                            <label for="">Last name <span style="color: red;">*</span></label>
+                            <input placeholder="Last name"></input>
+                            <label for="">Phone <span style="color: red;">*</span></label>
+                            <input placeholder="123-456-7890"></input>
+                        </div>
+                    </div>
+                    <div class="contactus-content-item-textarea">
+                        <label for="">Message <span style="color: red;">*</span></label>
+                        <textarea name="" id="" cols="30" rows="4" placeholder="Message"></textarea>
+                    </div>
+                    <div class="contactus-content-item-button">
+                        <button>Send</button>
+                    </div>
+
+                </div>
+                <div class="contactus-content-item">
+                    <div class="contactus-map">
+                        <div class="contactus-map-container" id="googleMap">
+                            Maps
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        function myMap() {
+            var contentString = "Here is Jaftea"
+            var myLatlng = new google.maps.LatLng(35.06028424122898, -80.99111433863933);
+            var mapProp = {
+                center: myLatlng,
+                zoom: 14,
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
             var marker = new google.maps.Marker({
                 position: myLatlng,
             });
             marker.setMap(map);
-          
+
             var infowindow = new google.maps.InfoWindow({
-                content:contentString
+                content: contentString
             });
-            infowindow.open(map,marker);
+            infowindow.open(map, marker);
         }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtJOQOoy4l_GAlL14RiWfLUXt0g1HfOOY&callback=myMap"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtJOQOoy4l_GAlL14RiWfLUXt0g1HfOOY&callback=myMap"></script>
+    <script>
+        $(window).on('scroll', function () {
+            scroll_pos = $(window).scrollTop() + $(window).height();
+            element_pos = $(".contact h2").offset().top + $(".contact h2").height();
+            if (scroll_pos > element_pos) {
+                $(".contact").addClass('contact-animate');
+            };
+        })
+    </script>
+
+
+    <!-- menu slide -->
+    <div class="menu-slide-container">
+        <div class="menu-slide-item1"
+            onclick="window.open('https://www.google.com/maps/place/J+Tea/@35.0591245,-80.9912865,15z/data=!4m5!3m4!1s0x0:0xed4be30ddd943b75!8m2!3d35.0591245!4d-80.9912865?shorturl=1')">
+            <i class="fa-brands fa-google"></i>
+            <div>Maps</div>
+        </div>
+        <div class="menu-slide-item2" onclick="window.open('https://www.instagram.com/jtea_tegacay/')">
+            <i class="fa-brands fa-instagram"></i>
+            <div>Follow</div>
+        </div>
+        <div class="menu-slide-item3" onclick="window.open('https://www.facebook.com/jteategacay/')">
+            <i class="fa-brands fa-facebook-f"></i>
+            <div>Share</div>
+        </div>
+        <div class="menu-slide-item4" onclick="window.open('https://www.yelp.com/biz/j-tea-tega-cay-fort-mill')">
+            <i class="fa-brands fa-yelp"></i>
+            <div>Yelp</div>
+        </div>
+    </div>
 
     <!-- footer -->
-    <footer class="container-fluid">
-        <div class="row">
-            <div class="img col-md-12 col-lg-4">
-                <img src="assets/images/home/payment.png" alt="">
-            </div>
-            <div class="logo col-md-12 col-lg-4 text-center">
-                <p>&copy; MINIMOG 2022</p>
-            </div>
-            <div class="link col-md-12 col-lg-4 last">
-                <a href="https://www.facebook.com/profile.php?id=100009223194372" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.instagram.com/phuthinhnguyen1407/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-pinterest"></i></a>
-            </div>
-        </div>
-    </footer>
-    <div id="scrolltop">
-        <img src="assets/images/home/totop.png" alt="">
-    </div>
-    <script>
-        $("#scrolltop").click(function name(params) {
-            $("html").animate({scrollTop:0});
-        })
-        window.onscroll=function(){scrolltop()};
-        function scrolltop(){
-            if ((document.body.scrollTop>100) || (document.documentElement.scrollTop>100)){
-            $("#scrolltop").addClass("scrolltop-show");
-            $("nav").addClass('nav-sticky');
-            }
-            else {
-                $("#scrolltop").removeClass("scrolltop-show");
-                $("nav").removeClass('nav-sticky');
-            };
-        }
-    </script>
-  
+    <script>HTMLImporter.import("footer.html");</script>
+
 </body>
+
 </html>
