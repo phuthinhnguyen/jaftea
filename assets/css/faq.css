@@ -1,17 +1,22 @@
 .faq-head {
   font-family: "Jost";
   text-align: center;
-  margin-top: 50px;
+  background-color: black;
+  padding-top: 50px;
 }
 .faq-head h1 {
   font-weight: 400;
   font-size: 40px;
+  color: white;
 }
 .faq-head div {
   display: inline-block;
+  color: white;
+}
+.faq-head div a {
+  color: white;
 }
 .faq-head div a:hover {
-  color: black;
   text-decoration: underline;
 }
 

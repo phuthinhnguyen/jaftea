@@ -295,17 +295,23 @@
 }
 @mixin pagehead{
     text-align: center;
-    margin-top: 50px;
+    background-color: $background-item;
+    padding-top: 50px;
     h1{
         font-weight: 400;
         font-size: 40px;
+        color: $text-title;
     }
     div{
         display: inline-block;
-        a:hover{
-            color: black;
-            text-decoration: underline;
+        color: white;
+        a{
+            color: $text-title;
+            &:hover{
+                text-decoration: underline;
+            }
         }
+        
     }
 }
 @mixin filterdropdown{

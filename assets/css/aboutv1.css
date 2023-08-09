@@ -1,17 +1,22 @@
 .aboutv1-head {
   font-family: "Jost";
   text-align: center;
-  margin-top: 50px;
+  background-color: black;
+  padding-top: 50px;
 }
 .aboutv1-head h1 {
   font-weight: 400;
   font-size: 40px;
+  color: white;
 }
 .aboutv1-head div {
   display: inline-block;
+  color: white;
+}
+.aboutv1-head div a {
+  color: white;
 }
 .aboutv1-head div a:hover {
-  color: black;
   text-decoration: underline;
 }
 
