@@ -1377,8 +1377,13 @@ footer {
 @media screen and (max-width:1100px) {
     .product {
         .product-wrap {
+            padding-right: 0;
             .product-item {
                 grid-template-columns: auto auto auto;
+                .item{
+                    width: 90%;
+                    height: 90%;
+                }
             }
         }
     }
@@ -1792,8 +1797,14 @@ footer {
 
     .product {
         .product-wrap {
+            padding-right: 30px;
             .product-item {
                 grid-template-columns: auto;
+                .item{
+                    width: 75%;
+                    height: 85%;
+                    margin: auto;
+                }
             }
         }
     }

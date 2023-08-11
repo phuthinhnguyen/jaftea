@@ -118,13 +118,17 @@ body {
 .slice{
 	border-right: 1px solid rgb(75, 74, 74);
 }
+
 .even .content{
 	width: 100%;
 	padding: 20px;
+	margin-top: 20px;
+	margin-left: 20px;
 }
 .even .content h2{
 	color: #c27137;
 	font-size: 30px;
+
 }
 .even .content h2:last-of-type{
 	color: green;
