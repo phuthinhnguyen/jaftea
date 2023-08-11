@@ -103,6 +103,9 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .flipbook .cover h2{
 	color: #c27137;
