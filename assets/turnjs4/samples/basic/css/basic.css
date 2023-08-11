@@ -99,6 +99,10 @@ body {
 	background-color: rgb(39, 39, 39);
 	color: white;
 }
+.flipbook .flipbook-pages img{
+	width: 400px;
+	height: 400px;
+}
 .flipbook .cover {
 	display: flex;
 	justify-content: center;
@@ -118,12 +122,22 @@ body {
 .slice{
 	border-right: 1px solid rgb(75, 74, 74);
 }
-
+.flipbook .even{
+	padding-top: 6px;
+	padding-right: 10px;
+	display: flex;
+	align-items: flex-start;
+}
+.content-wrap{
+	background-color: #231f20;
+	height: 100%;
+	width: 100%;
+}
 .even .content{
 	width: 100%;
 	padding: 20px;
 	margin-top: 20px;
-	margin-left: 20px;
+	margin-left: 5px;
 }
 .even .content h2{
 	color: #c27137;
