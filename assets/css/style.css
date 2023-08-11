@@ -1062,7 +1062,7 @@ footer .footer-wrap .footer-content .footer-content-item .facebook-content .face
   top: 10px;
   left: 10px;
   width: 200px;
-  height: 200px;
+  height: 50px;
   display: flex;
   -moz-column-gap: 10px;
        column-gap: 10px;
@@ -1075,6 +1075,8 @@ footer .footer-wrap .footer-content .footer-content-item .facebook-content .face
 footer .footer-wrap .footer-content .footer-content-item .facebook-content .facebook-content-top .facebook-content-top-text {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 footer .footer-wrap .footer-content .footer-content-item .facebook-content .facebook-content-top .facebook-content-top-text a {
   font-size: 14px;
@@ -1083,12 +1085,13 @@ footer .footer-wrap .footer-content .footer-content-item .facebook-content .face
   border: none;
   padding: 0;
   background-color: transparent;
-  width: 150px;
+  width: 120px;
+  height: 20px;
+  text-align: left;
 }
 footer .footer-wrap .footer-content .footer-content-item .facebook-content .facebook-content-top .facebook-content-top-text a:first-of-type {
   font-size: 18px;
   font-weight: 500;
-  margin-bottom: 10px;
 }
 footer .footer-wrap .footer-content .footer-content-item .facebook-content .facebook-content-bottom {
   position: absolute;

@@ -563,7 +563,9 @@ footer .footer-wrap .footer-content .footer-content-item .facebook-content .face
 	border: none;
 	padding: 0;
 	background-color: transparent;
-	width: 150px;
+	width: 120px;
+	height: 20px;
+	text-align: left;
 }
 
 footer .footer-wrap .footer-content .footer-content-item .facebook-content .facebook-content-top .facebook-content-top-text a:first-of-type {
