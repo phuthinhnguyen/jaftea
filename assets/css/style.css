@@ -407,6 +407,17 @@ nav .row .right .offcanvas-body .menu-show .menu-show-close:hover {
   color: white;
 }
 
+@keyframes productitem {
+  0% {
+    transform: translateY(-3px);
+  }
+  10% {
+    transform: translateY(-25px) scale(1.8);
+  }
+  100% {
+    transform: none;
+  }
+}
 .item.animate {
   animation: fadeinup 1s;
   opacity: 1;
@@ -467,7 +478,7 @@ nav .row .right .offcanvas-body .menu-show .menu-show-close:hover {
   transform: rotate(25deg);
 }
 .product .product-wrap .product-item .item:hover a {
-  transform: rotateY(180deg);
+  animation: productitem 1.2s;
 }
 
 @keyframes gallery-animate2 {
@@ -586,6 +597,85 @@ nav .row .right .offcanvas-body .menu-show .menu-show-close:hover {
 }
 .gallery .gallery-wrap .gallery-item .item:hover img {
   scale: 1.2;
+}
+
+#show-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 100%;
+  padding: 40px;
+  padding-left: 60px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  animation: showimage 0.8s;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  z-index: 2000;
+}
+#show-image .img {
+  width: 100%;
+  height: 70%;
+  max-width: 600px;
+  position: relative;
+  border: 5px solid white;
+}
+#show-image .img img {
+  width: 100%;
+  height: 100%;
+}
+#show-image .img #pre-button, #show-image .img #next-button {
+  position: absolute;
+  top: 50%;
+  opacity: 0;
+  cursor: pointer;
+  transition: 1s;
+}
+#show-image .img #pre-button i, #show-image .img #next-button i {
+  color: #c27137;
+  font-size: 50px;
+}
+#show-image .img #pre-button {
+  left: 10px;
+}
+#show-image .img #next-button {
+  right: 10px;
+}
+#show-image .img:hover #pre-button, #show-image .img:hover #next-button {
+  opacity: 1;
+}
+#show-image .close {
+  display: flex;
+  align-items: flex-start;
+  height: 80%;
+}
+#show-image .close #close-button {
+  color: white;
+  background-color: #c27137;
+  font-size: 35px;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+#show-image .close #close-button:hover {
+  background-color: black;
+  border: 1px solid white;
+}
+#show-image .close #close-button i {
+  font-size: 22px;
 }
 
 @keyframes fadeinup {
