@@ -34,7 +34,54 @@ body {
 	background-color: black;
 	margin: auto;
 }
-
+.menuorder-res{
+	width: 100%;
+	background-color: black;
+	margin: auto;
+	display: none;
+}
+.menuorder-res .item{
+	display: flex;
+	flex-direction: column;
+	row-gap: 40px;
+	font-family: "Jost";
+	padding-bottom: 40px;
+}
+.item .top{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.item .top img{
+	width: 400px;
+	height: 400px;
+}
+.item .bottom{
+	padding: 10px 30px;
+	color: #fcfcfc;
+}
+.item .bottom .content-menu{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin-top: 30px;
+}
+.item .bottom h2{
+	color: #c27137;
+	font-size: 30px;
+}
+.item .bottom h2:last-of-type{
+	color: green;
+	font-size: 25px;
+	margin-top: 20px;
+}
+.content-menu .item{
+	row-gap: 0px;
+}
+.item .bottom .price{
+	color: #c27137;
+}
 .flipbook-viewport {
 	overflow: hidden;
 	width: 100%;
@@ -132,6 +179,7 @@ body {
 	background-color: #231f20;
 	height: 100%;
 	width: 100%;
+	font-family: "Jost";
 }
 .even .content{
 	width: 100%;
@@ -813,7 +861,16 @@ footer .footer-wrap .footer-bot p a {
 		column-gap: 80px;
 	}
 }
+@media screen and (max-width: 1000px) {
+	.menuorder{
+		display: none;
+	}
+	.menuorder-res{
+		display: block;
+		padding: 150px;
+	}
 
+}
 @media screen and (max-width: 991px) {
 	nav .row .left ul {
 		display: none;
@@ -969,6 +1026,10 @@ footer .footer-wrap .footer-bot p a {
 	.contact .row .last button {
 		width: 15%;
 	}
+	.menuorder-res{
+		display: block;
+		padding: 50px;
+	}
 }
 
 @media screen and (max-width: 650px) {
@@ -1044,6 +1105,14 @@ footer .footer-wrap .footer-bot p a {
 	.gallery .gallery-wrap .gallery-item {
 		grid-template-columns: auto auto auto;
 	}
+	.menuorder-res{
+		display: block;
+		padding: 0;
+	}
+	.menuorder-res .top img{
+		width: 300px;
+		height: 300px;
+	}
 }
 
 @media screen and (max-width: 450px) {
@@ -1117,10 +1186,15 @@ footer .footer-wrap .footer-bot p a {
 	.gallery .gallery-wrap .gallery-item {
 		grid-template-columns: auto auto;
 	}
+	.menuorder-res .top img{
+		width: 250px;
+		height: 250px;
+	}
 }
 
 @media screen and (max-width: 300px) {
 	nav .row .right .right-button-responsive a:last-of-type {
 		display: none;
 	}
+
 }

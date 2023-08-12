@@ -412,7 +412,7 @@ nav .row .right .offcanvas-body .menu-show .menu-show-close:hover {
     transform: translateY(-3px);
   }
   10% {
-    transform: translateY(-25px) scale(1.8);
+    transform: translateY(-22px) scale(1.2);
   }
   100% {
     transform: none;
@@ -474,7 +474,6 @@ nav .row .right .offcanvas-body .menu-show .menu-show-close:hover {
   font-weight: 500;
 }
 .product .product-wrap .product-item .item:hover img {
-  transform: scale(1.3);
   transform: rotate(25deg);
 }
 .product .product-wrap .product-item .item:hover a {
