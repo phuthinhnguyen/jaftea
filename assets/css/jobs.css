@@ -51,7 +51,7 @@
 .jobs .jobs-wrap .item h4 {
   font-size: 18px;
   margin-top: 30px;
-  color: #c27137;
+  color: #d40e8c;
 }
 .jobs .jobs-wrap .item ul li {
   font-size: 18px;
@@ -71,7 +71,7 @@
   width: 200px;
   padding: 10px;
   color: white;
-  background-color: #c27137;
+  background-color: #d40e8c;
   font-family: "Jost";
   font-size: 18px;
   border-radius: 30px;
@@ -84,7 +84,7 @@
   width: 150px;
 }
 .jobs .jobs-wrap .item button:hover {
-  background-color: black;
+  background-color: #39b54a;
   border: 1px solid white;
 }
 .jobs .jobs-wrap .item1:hover {

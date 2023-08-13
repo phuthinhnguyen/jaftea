@@ -49,7 +49,7 @@
 }
 .gallery .gallery-wrap .filters-container .filters-wrap .active {
   color: white;
-  background-color: #c27137;
+  background-color: #d40e8c;
 }
 .gallery .gallery-wrap .filters-container .filters-wrap li {
   font-family: "Jost";
@@ -147,7 +147,7 @@
   transition: 1s;
 }
 #show-image .img #pre-button i, #show-image .img #next-button i {
-  color: #c27137;
+  color: #d40e8c;
   font-size: 50px;
 }
 #show-image .img #pre-button {
@@ -166,7 +166,7 @@
 }
 #show-image .close #close-button {
   color: white;
-  background-color: #c27137;
+  background-color: #d40e8c;
   font-size: 35px;
   height: 32px;
   width: 32px;
@@ -180,7 +180,7 @@
   transition: 0.5s;
 }
 #show-image .close #close-button:hover {
-  background-color: black;
+  background-color: #39b54a;
   border: 1px solid white;
 }
 #show-image .close #close-button i {

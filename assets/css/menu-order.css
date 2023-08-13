@@ -62,10 +62,10 @@
   padding: 20px;
 }
 .menuorder .menuorder-wrap .menuorder-item .menuorder-item-right h2 {
-  color: #c27137;
+  color: #d40e8c;
 }
 .menuorder .menuorder-wrap .menuorder-item .menuorder-item-right h2:last-of-type {
-  color: #c27137;
+  color: #d40e8c;
   font-weight: 400;
   font-size: 22px;
   margin-top: 15px;
@@ -92,7 +92,7 @@
        column-gap: 20px;
 }
 .menuorder .menuorder-wrap .menuorder-item .menuorder-item-right .menuorder-item-right-content .menuorder-item-right-content-left .item .price, .menuorder .menuorder-wrap .menuorder-item .menuorder-item-right .menuorder-item-right-content .menuorder-item-right-content-right .item .price {
-  color: #c27137;
+  color: #d40e8c;
 }
 
 @media screen and (max-width: 1100px) {

@@ -52,7 +52,7 @@
   width: 200px;
   padding: 10px;
   color: white;
-  background-color: #c27137;
+  background-color: #d40e8c;
   font-family: "Jost";
   font-size: 18px;
   border-radius: 30px;
@@ -64,7 +64,7 @@
   margin-top: 50px;
 }
 .aboutus .aboutus-wrap .item button:hover {
-  background-color: black;
+  background-color: #39b54a;
   border: 1px solid white;
 }
 .aboutus .aboutus-wrap .item button i {
@@ -210,7 +210,7 @@
   transition: 1s;
 }
 #show-image .img #pre-button i, #show-image .img #next-button i {
-  color: #c27137;
+  color: #d40e8c;
   font-size: 50px;
 }
 #show-image .img #pre-button {
@@ -229,7 +229,7 @@
 }
 #show-image .close #close-button {
   color: white;
-  background-color: #c27137;
+  background-color: #d40e8c;
   font-size: 35px;
   height: 32px;
   width: 32px;
@@ -243,7 +243,7 @@
   transition: 0.5s;
 }
 #show-image .close #close-button:hover {
-  background-color: black;
+  background-color: #39b54a;
   border: 1px solid white;
 }
 #show-image .close #close-button i {
