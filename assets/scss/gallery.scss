@@ -78,7 +78,6 @@
                             margin-top: 20px;
                             overflow: hidden;
                             cursor: pointer;
-                
                             // .title-wrap{
                             //     display: flex !important;
                             //     justify-content: space-between !important;
@@ -103,7 +102,7 @@
                             // }
                             img{
                                 width: 100%;
-                                height: 300px;
+                                height: 260px;
                                 transition: 1.5s;
                             }
                             &:hover{
@@ -160,6 +159,15 @@
         img{
             width: 100%;
             height: 100%;
+        }
+        p{
+            position: absolute;
+            bottom: -60px;
+            color: $text-title;
+            font-size: 18px;
+            left: 50%;
+            transform: translate(-50%);
+            text-transform: capitalize;
         }
         #pre-button,#next-button{
             position: absolute;
@@ -229,7 +237,7 @@
                         .all{
                             .single-menu{
                                 img{
-                                    height: 250px;
+                                    height: 220px;
                                 }
                             }
                         }
@@ -255,7 +263,7 @@
                             max-width: 33%;
                             .single-menu{
                                 img{
-                                    height: 280px;
+                                    height: 260px;
                                 }
                             }
                         }
@@ -277,7 +285,7 @@
                             max-width: 33%;
                             .single-menu{
                                 img{
-                                    height: 250px;
+                                    height: 230px;
                                 }
                             }
                         }
@@ -305,7 +313,36 @@
                             max-width: 50%;
                             .single-menu{
                                 img{
-                                    height: 250px;
+                                    height: 270px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    .gallery{
+        .gallery-wrap{
+            .filters-container{
+                .filters-wrap{
+                    li{
+                        padding: 20px;
+                    }
+                }
+                .filters-content{
+                    margin-top: 20px;
+                    .row{
+                        .all{
+                            flex: 0 0 50%;
+                            max-width: 50%;
+                            .single-menu{
+                                img{
+                                    height: 240px;
                                 }
                             }
                         }
@@ -333,6 +370,14 @@
                         }
                     }
                 }
+            }
+        }
+    }
+    #show-image{
+        .img{
+            max-height: 200px;
+            p{
+                font-size: 14px;
             }
         }
     }
