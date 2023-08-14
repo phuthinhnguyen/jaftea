@@ -68,11 +68,11 @@ body {
 	margin-top: 30px;
 }
 .item .bottom h2{
-	color: #c27137;
+	color: #d40e8c;
 	font-size: 30px;
 }
 .item .bottom h2:last-of-type{
-	color: green;
+	color: #39b54a;
 	font-size: 25px;
 	margin-top: 20px;
 }
@@ -80,7 +80,7 @@ body {
 	row-gap: 0px;
 }
 .item .bottom .price{
-	color: #c27137;
+	color: #d40e8c;
 }
 .flipbook-viewport {
 	overflow: hidden;
@@ -159,7 +159,7 @@ body {
 	background-size: cover;
 }
 .flipbook .cover h2{
-	color: #c27137;
+	color: #d40e8c;
 }
 .flipbook .odd{
 	display: flex;
@@ -188,12 +188,12 @@ body {
 	margin-left: 5px;
 }
 .even .content h2{
-	color: #c27137;
+	color: #d40e8c;
 	font-size: 30px;
 
 }
 .even .content h2:last-of-type{
-	color: green;
+	color: #39b54a;
 	font-size: 25px;
 	margin-top: 20px;
 }
@@ -203,7 +203,7 @@ body {
 
 }
 .even .content .content-menu .price{
-	color: #c27137;
+	color: #d40e8c;
 }
 body a {
 	text-decoration: none;
