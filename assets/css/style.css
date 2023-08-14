@@ -461,7 +461,7 @@ nav .row .right .offcanvas-body .menu-show .menu-show-close:hover {
   box-shadow: 0 1px 3px 0 #d40e8c, 0 3px 10px 0 #d40e8c;
 }
 .product .product-wrap .product-item .item img {
-  width: 60%;
+  width: 80%;
   height: auto;
   border-radius: 10px;
   transition: 0.8s;
@@ -472,6 +472,7 @@ nav .row .right .offcanvas-body .menu-show .menu-show-close:hover {
   font-style: italic;
   transition: 0.5s;
   font-weight: 500;
+  text-transform: capitalize;
 }
 .product .product-wrap .product-item .item:hover img {
   transform: rotate(25deg);

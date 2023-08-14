@@ -273,7 +273,7 @@ nav .row .left {
 }
 
 nav .row .left img {
-	width: 60px;
+	width: 80px;
 	height: 60px;
 	cursor: pointer;
 }
@@ -304,7 +304,7 @@ nav .row .left li>a:hover {
 nav .row .left li>a:hover::after {
 	height: 2px;
 	animation: navleft 0.3s;
-	background-color: #c27137;
+	background-color: #d40e8c;
 	display: block;
 	margin: auto;
 	width: 100%;
@@ -323,7 +323,7 @@ nav .row .right .right-button button {
 	width: 200px;
 	padding: 10px;
 	color: white;
-	background-color: #c27137;
+	background-color: #d40e8c;
 	font-family: "Jost";
 	font-size: 18px;
 	border-radius: 30px;
@@ -335,7 +335,7 @@ nav .row .right .right-button button {
 }
 
 nav .row .right .right-button button:hover {
-	background-color: black;
+	background-color: #39b54a;
 	border: 1px solid white;
 }
 
@@ -551,7 +551,7 @@ footer .footer-wrap .footer-content .footer-content-item h2 {
 	margin: 0;
 	text-align: left;
 	margin-bottom: 30px;
-	color: #c27137;
+	color: #d40e8c;
 }
 
 footer .footer-wrap .footer-content .footer-content-item p {
@@ -574,7 +574,7 @@ footer .footer-wrap .footer-content .footer-content-item a {
 	display: inline-block;
 	text-align: center;
 	margin-right: 8px;
-	border: 1px solid #c27137;
+	border: 1px solid #d40e8c;
 	cursor: pointer;
 }
 
@@ -583,7 +583,7 @@ footer .footer-wrap .footer-content .footer-content-item a i {
 }
 
 footer .footer-wrap .footer-content .footer-content-item a:hover {
-	color: #c27137;
+	color: #d40e8c;
 }
 
 footer .footer-wrap .footer-content .footer-content-item a:hover i {
@@ -594,7 +594,7 @@ footer .footer-wrap .footer-content .footer-content-item .facebook-content {
 	width: 100%;
 	height: 120px;
 	/* background-image: url("assets/turnjs4/samples/basic/pages/footer-fb.jpg"); */
-	background-image: url('../pages/footer-fb.jpg');
+	background-image: url('../pages/footer-fb-logo-rove2.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -677,7 +677,7 @@ footer .footer-wrap .footer-bot p {
 }
 
 footer .footer-wrap .footer-bot p a {
-	color: #c27137;
+	color: #d40e8c;
 }
 
 #scrolltop {
@@ -685,7 +685,7 @@ footer .footer-wrap .footer-bot p a {
 	border-radius: 50%;
 	width: 40px;
 	height: 40px;
-	background-color: #c27137;
+	background-color: #d40e8c;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -700,7 +700,7 @@ footer .footer-wrap .footer-bot p a {
 
 #scrolltop:hover {
 	cursor: pointer;
-	background-color: black;
+	background-color: #39b54a;
 }
 
 .scrolltop-show {

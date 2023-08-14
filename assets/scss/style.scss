@@ -518,7 +518,8 @@ nav {
                 box-shadow: 0 1px 3px 0 $button-color, 0 3px 10px 0 $button-color;
 
                 img {
-                    width: 60%;
+                    // width: 50%;
+                    width: 80%;
                     height: auto;
                     border-radius: 10px;
                     transition: .8s;
@@ -530,6 +531,7 @@ nav {
                     font-style: italic;
                     transition: .5s;
                     font-weight: 500;
+                    text-transform: capitalize;
                 }
 
                 &:hover {
