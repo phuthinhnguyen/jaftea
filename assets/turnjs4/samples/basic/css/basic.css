@@ -45,7 +45,7 @@ body {
 	flex-direction: column;
 	row-gap: 40px;
 	font-family: "Jost";
-	padding-bottom: 40px;
+	/* padding-bottom: 40px; */
 }
 .item .top{
 	display: flex;
@@ -53,7 +53,7 @@ body {
 	align-items: center;
 }
 .item .top img{
-	width: 400px;
+	width: 480px;
 	height: 400px;
 }
 .item .bottom{
@@ -354,7 +354,7 @@ nav .row .right .right-button-responsive button {
 	width: 200px;
 	padding: 10px;
 	color: white;
-	background-color: #c27137;
+	background-color: #d40e8c;
 	font-family: "Jost";
 	font-size: 18px;
 	border-radius: 30px;
@@ -377,7 +377,7 @@ nav .row .right .right-button-responsive button i {
 }
 
 nav .row .right .right-button-responsive a {
-	background-color: #c27137;
+	background-color: #d40e8c;
 	height: 35px;
 	width: 35px;
 	padding: 5px;
@@ -407,7 +407,7 @@ nav .row .right .menu {
 }
 
 nav .row .right .menu a {
-	background-color: #c27137;
+	background-color: #d40e8c;
 	height: 35px;
 	width: 35px;
 	padding: 5px;
@@ -1139,6 +1139,18 @@ footer .footer-wrap .footer-bot p a {
 	.product .product-wrap .product-item {
 		grid-template-columns: auto;
 	}
+	.menuorder-res .item  .content-menu .item p {
+		font-size: 14px;
+	}
+	/* .menuorder-res .item  .content-menu .item .food {
+		font-size: 11px;	
+	} */
+	.menuorder-res .item  .content-menu .item .food {
+		 margin-top: 25px;		
+	}
+	.menuorder-res .item  .content-menu .item .food2 {
+		margin-top: 5px;
+   }
 }
 
 @media screen and (max-width: 400px) {
