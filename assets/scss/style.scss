@@ -1505,7 +1505,21 @@ footer {
         }
     }
 }
-
+@media screen and (max-width:1015px) {
+    nav{
+        .row{
+            .left{
+                ul{
+                    li{
+                        a{
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width:991px) {
     nav {
         .row {
@@ -1730,7 +1744,19 @@ footer {
 
 
 }
-
+@media screen and (max-width:700px) {
+   .product{
+    .product-wrap{
+        .product-item{
+            .item{
+                a{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+   }
+}
 @media screen and (max-width:650px) {
     footer {
         .footer-wrap {
