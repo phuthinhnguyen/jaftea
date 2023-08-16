@@ -457,7 +457,7 @@ nav .row .right .offcanvas-header button {
 	color: white;
 	z-index: 1000;
 	font-size: 14px;
-	background-color: #c27137;
+	background-color: #d40e8c;
 }
 
 nav .row .right .offcanvas-body .menu-show {
@@ -495,7 +495,7 @@ nav .row .right .offcanvas-body .menu-show .menu-show-close {
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	user-select: none;
-	color: #c27137;
+	color: #d40e8c;
 }
 
 nav .row .right .offcanvas-body .menu-show .menu-show-close:hover {
