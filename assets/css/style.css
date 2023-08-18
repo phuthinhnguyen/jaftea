@@ -97,6 +97,11 @@ nav .row .right {
   justify-content: flex-end;
   align-items: center;
 }
+nav .row .right .right-button {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
 nav .row .right .right-button button {
   height: 40px;
   width: 200px;
@@ -111,6 +116,8 @@ nav .row .right .right-button button {
   justify-content: center;
   align-items: center;
   transition: 0.3s;
+  font-size: 14px;
+  width: 160px;
 }
 nav .row .right .right-button button:hover {
   background-color: #39b54a;
@@ -138,7 +145,8 @@ nav .row .right .right-button-responsive button {
   justify-content: center;
   align-items: center;
   transition: 0.3s;
-  font-size: 16px;
+  font-size: 14px;
+  width: 160px;
 }
 nav .row .right .right-button-responsive button:hover {
   background-color: #39b54a;
@@ -374,31 +382,32 @@ nav .row .right .offcanvas-body .menu-show .menu-show-close:hover {
 .img-text-recotton {
   position: absolute;
   top: 93%;
-  left: 80%;
+  left: 70%;
   animation: imgtextrecotton 3s;
 }
 @keyframes imgtextrecotton {
   0% {
-    left: 70%;
+    left: 60%;
   }
   100% {
-    left: 80%;
+    left: 70%;
   }
 }
 .img-text-recotton > p {
   display: inline-block;
   margin-right: 10px;
   font-weight: 500;
+  color: white;
 }
 .img-text-recotton a {
   border-bottom: 2px solid black;
   font-weight: 500;
   margin-left: 5px;
-  font-size: 16px;
+  font-size: 14px;
   background-color: #d40e8c;
   color: white;
   border-radius: 20px;
-  padding: 10px 15px;
+  padding: 8px 15px;
   border: none;
   transition: 0.5s;
 }
@@ -1293,17 +1302,6 @@ footer .footer-wrap .footer-bot p a {
   .img .img-wrap .img-text a {
     margin-top: 70px;
   }
-  @keyframes imgtextrecotton {
-    0% {
-      left: 65%;
-    }
-    100% {
-      left: 75%;
-    }
-  }
-  .img .img-wrap .img-text-recotton {
-    left: 75%;
-  }
   .product {
     grid-template-columns: auto auto auto auto;
   }
@@ -1313,7 +1311,17 @@ footer .footer-wrap .footer-bot p a {
     margin-left: 40px;
   }
 }
+@media screen and (max-width: 1300px) {
+  .img .img-wrap .img-text-recotton {
+    top: 90%;
+  }
+}
 @media screen and (max-width: 1199px) {
+  nav .row .right .right-button button {
+    font-size: 11px;
+    width: 120px;
+    padding: 5px;
+  }
   .user {
     display: none;
   }
@@ -1327,14 +1335,15 @@ footer .footer-wrap .footer-bot p a {
   }
   @keyframes imgtextrecotton {
     0% {
-      left: 60%;
+      left: 50%;
     }
     100% {
-      left: 70%;
+      left: 60%;
     }
   }
   .img .img-wrap .img-text-recotton {
-    left: 70%;
+    left: 60%;
+    top: 90%;
   }
   .contact .contact-wrap .contactus-content-container {
     flex-direction: column;
@@ -1421,6 +1430,7 @@ footer .footer-wrap .footer-bot p a {
     }
   }
   .img .img-wrap .img-text-recotton {
+    display: none;
     top: 85%;
     left: 62%;
   }
@@ -1509,6 +1519,11 @@ footer .footer-wrap .footer-bot p a {
   }
 }
 @media screen and (max-width: 650px) {
+  nav .row .right .right-button-responsive button {
+    font-size: 11px;
+    width: 120px;
+    padding: 5px;
+  }
   footer .footer-wrap .footer-content {
     grid-template-columns: auto;
     row-gap: 30px;
@@ -1549,6 +1564,14 @@ footer .footer-wrap .footer-bot p a {
     font-size: 25px;
   }
 }
+@media screen and (max-width: 550px) {
+  nav .row .right .right-button-responsive button {
+    display: none;
+  }
+  nav .row .right .right-button-responsive .order {
+    display: flex;
+  }
+}
 @media screen and (max-width: 500px) {
   nav .row .center img {
     width: 100px;
@@ -1569,12 +1592,6 @@ footer .footer-wrap .footer-bot p a {
   }
 }
 @media screen and (max-width: 450px) {
-  nav .row .right .right-button-responsive button {
-    display: none;
-  }
-  nav .row .right .right-button-responsive .order {
-    display: flex;
-  }
   nav .row .offcanvas {
     width: 250px;
   }
@@ -1597,6 +1614,9 @@ footer .footer-wrap .footer-bot p a {
   }
 }
 @media screen and (max-width: 400px) {
+  nav .row .right .right-button-responsive a:last-of-type {
+    display: none;
+  }
   .img .img-wrap .img-text p {
     font-size: 16px;
   }
@@ -1631,10 +1651,5 @@ footer .footer-wrap .footer-bot p a {
   }
   .gallery .gallery-wrap .gallery-item {
     grid-template-columns: auto auto;
-  }
-}
-@media screen and (max-width: 300px) {
-  nav .row .right .right-button-responsive a:last-of-type {
-    display: none;
   }
 }

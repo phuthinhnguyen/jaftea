@@ -6,7 +6,6 @@ body {
     a {
         @include link-decoration();
     }
-    // @include scrollbar(8px, transparent, black, black);
 }
 
 ::selection {
@@ -125,10 +124,12 @@ nav {
             align-items: center;
 
             .right-button {
-
+                display: flex;
+                column-gap: 20px;
                 button {
                     @include button;
-
+                    font-size: 14px;
+                    width: 160px;
                     i {
                         font-size: 18px;
                         margin-right: 10px;
@@ -142,8 +143,8 @@ nav {
 
                 button {
                     @include button;
-                    font-size: 16px;
-
+                    font-size: 14px;
+                    width: 160px;
                     i {
                         font-size: 18px;
                         margin-right: 10px;
@@ -427,17 +428,17 @@ nav {
 .img-text-recotton {
     @keyframes imgtextrecotton {
         0% {
-            left: 70%;
+            left: 60%;
         }
 
         100% {
-            left: 80%;
+            left: 70%;
         }
     }
 
     position: absolute;
     top: 93%;
-    left: 80%;
+    left: 70%;
     // font-size: 18px;
     animation: imgtextrecotton 3s;
 
@@ -446,17 +447,18 @@ nav {
         margin-right: 10px;
         // font-size: 20px;
         font-weight: 500;
+        color: $text-title;
     }
 
     a {
         border-bottom: 2px solid black;
         font-weight: 500;
         margin-left: 5px;
-        font-size: 16px;
+        font-size: 14px;
         background-color: $button-color;
         color: $text-title;
         border-radius: 20px;
-        padding: 10px 15px;
+        padding: 8px 15px;
         border: none;
         transition: .5s;
 
@@ -1359,19 +1361,19 @@ footer {
                 margin-top: 70px;
             }
 
-            @keyframes imgtextrecotton {
-                0% {
-                    left: 65%
-                }
+            // @keyframes imgtextrecotton {
+            //     0% {
+            //         left: 65%
+            //     }
 
-                100% {
-                    left: 75%
-                }
-            }
+            //     100% {
+            //         left: 75%
+            //     }
+            // }
 
-            .img-text-recotton {
-                left: 75%;
-            }
+            // .img-text-recotton {
+            //     left: 75%;
+            // }
         }
     }
 
@@ -1391,21 +1393,30 @@ footer {
         }
     }
 }
-
+@media screen and (max-width:1300px) {
+    .img{
+        .img-wrap{
+            .img-text-recotton{
+                top: 90%;
+            }
+        }
+    }
+}
 @media screen and (max-width:1199px) {
-    // nav {
-    //     .row {
-    //         padding: 0 5px;
+    nav {
+        .row {
 
-    //         .left {
-
-    //         }
-
-    //         .menu {
-    //             display: block;
-    //         }
-    //     }
-    // }
+          .right{
+            .right-button{
+                button{
+                    font-size: 11px;
+                    width: 120px;
+                    padding: 5px;
+                }
+            }
+          }
+        }
+    }
 
     .user {
         display: none;
@@ -1429,16 +1440,17 @@ footer {
 
             @keyframes imgtextrecotton {
                 0% {
-                    left: 60%
+                    left: 50%
                 }
 
                 100% {
-                    left: 70%
+                    left: 60%
                 }
             }
 
             .img-text-recotton {
-                left: 70%;
+                left: 60%;
+                top: 90%;
             }
 
         }
@@ -1587,6 +1599,7 @@ footer {
             }
 
             .img-text-recotton {
+                display: none;
                 top: 85%;
                 left: 62%;
             }
@@ -1758,6 +1771,20 @@ footer {
    }
 }
 @media screen and (max-width:650px) {
+    nav {
+        .row {
+
+          .right{
+            .right-button-responsive{
+                button{
+                    font-size: 11px;
+                    width: 120px;
+                    padding: 5px;
+                }
+            }
+          }
+        }
+    }
     footer {
         .footer-wrap {
             .footer-content {
@@ -1821,7 +1848,22 @@ footer {
         font-size: 25px;
     }
 }
-
+@media screen and (max-width:550px) {
+    nav{
+        .row{
+            .right{
+                .right-button-responsive{
+                    button{
+                        display: none;
+                    }
+                    .order{
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width:500px) {
     nav {
         .row {
@@ -1880,17 +1922,6 @@ footer {
 @media screen and (max-width:450px) {
     nav {
         .row {
-            .right {
-                .right-button-responsive {
-                    button {
-                        display: none;
-                    }
-
-                    .order {
-                        display: flex;
-                    }
-                }
-            }
 
             .offcanvas {
                 width: 250px;
@@ -1928,6 +1959,20 @@ footer {
 }
 
 @media screen and (max-width:400px) {
+    nav {
+        .row {
+            .right {
+                .right-button-responsive {
+                    a {
+                        &:last-of-type {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
     .img {
         .img-wrap {
             .img-text {
@@ -1995,19 +2040,3 @@ footer {
     }
 }
 
-@media screen and (max-width:300px) {
-    nav {
-        .row {
-            .right {
-                .right-button-responsive {
-                    a {
-                        &:last-of-type {
-                            display: none;
-                        }
-                    }
-                }
-            }
-
-        }
-    }
-}
